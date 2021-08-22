@@ -2,15 +2,22 @@
 //  ContentView.swift
 //  FoodApp
 //
-//  Created by Cemalettin Yılmaz on 22.08.2021.
 //
-
 import SwiftUI
 
+
 struct ContentView: View {
+    @EnvironmentObject var authentication: Authentication
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        NavigationView {
+            
+            Home()
+                .navigationBarHidden(true)
+                .navigationBarBackButtonHidden(true)
+            
+        }
+        
     }
 }
 
