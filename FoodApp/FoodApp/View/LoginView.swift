@@ -11,7 +11,7 @@ struct LoginView: View {
     
     var body: some View {
         VStack {
-            Text("My Secure App")
+            Text("Food App")
                 .font(.largeTitle)
             TextField("Email Address", text: $loginVM.credentials.email)
                 .keyboardType(.emailAddress)
